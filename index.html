@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation-Player</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script defer src="./js/addFrame.js"></script>
+    <script defer src="./js/mainCanvas.js"></script>
+    <script defer src="./js/framebuttons.js"></script>
+    <script defer src="./js/preview.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="header-menu-left" src="./assets/images/menu.png">
+        <h1 class="header-title">Animation Player</h1>
+        <img class="header-menu-right" src="./assets/images/more.png">
+    </header>
+    <main class="main">
+        <div class="frames-column">
+            <ul class="frames-list">
+                <li class="frame frame1">
+                    <button class="duplicate-frame duplicate-frame1"></button>
+                    <canvas class="frame-canvas1 frame-canvas"></canvas>
+                </li>
+            </ul>
+            <div class="add-frame">
+                <p class="add-frame-text">Add New Frame</p>
+            </div>
+        </div>
+        <div class="canvas-field">
+            <canvas class="canvas">Your browser is very old...</canvas>
+        </div>
+        <div class="animation">
+            <button class="full-screen"></button>
+            <div class="animation-field"></div>
+            <input class="animation-fps" type="range" min='1' max='24'>
+        </div>
+    </main>
+</body>
+</html>
